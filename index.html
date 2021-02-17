@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    
+    <h1>Click this button to change the background</h1>
+    <div id="bodyDiv">
+     <button onclick ="newColor()"id="changeBackground"><b>Go!</b></button>
+      </div>
+    <style>
+        body {
+          background-color: lightcyan;
+        }
+
+        h1 {
+          color: blue;
+          font-family: Impact;
+          text-align: center;
+          padding-top: 200px;
+        }
+
+        button {
+          background-color: lavender;
+          height: 100px;
+          width: 250px;
+          border-radius: 12px;
+          color: purple;
+          font-size: 40px;
+          border: 1px solid purple;
+          
+        }
+
+        #bodyDiv {
+          display: flex;
+          justify-content: center;
+        }
+
+
+
+
+
+        </style>
+  <script>
+    function changeColor(color) {
+      document.body.style.background = color;
+    }
+    
+    function newColor(){
+      changeColor('yellow');
+    }
+  </script>
+    <body>
+</html>
